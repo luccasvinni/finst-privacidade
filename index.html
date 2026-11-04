@@ -118,7 +118,7 @@
     <div class="header">
       <div class="logo"><span>Finst</span></div>
       <h1>Política de Privacidade</h1>
-      <p class="date">Última atualização: 25 de agosto de 2026</p>
+      <p class="date">Última atualização: 3 de novembro de 2026</p>
     </div>
 
     <p>A sua privacidade é uma prioridade absoluta no <strong>Finst</strong>. Esta Política de Privacidade explica como o aplicativo Finst (desenvolvido por Luvi Studio) lida com seus dados, demonstrando nosso compromisso com a transparência, segurança da informação e em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) e as diretrizes do Google Play Console.</p>
@@ -161,6 +161,10 @@
     <ul>
       <li><strong>Criptografia em Trânsito:</strong> Toda comunicação é realizada via HTTPS/TLS criptografado.</li>
       <li><strong>Criptografia em Repouso:</strong> O banco de dados local no aparelho é criptografado com o algoritmo AES-256.</li>
+      <li><strong>Backup na nuvem:</strong> se você usa o backup na nuvem, o app monta uma cópia dos seus dados, criptografa no próprio aparelho (AES-256-GCM) e só então envia. O servidor guarda um bloco indecifrável.</li>
+      <li><strong>Custódia da chave do backup:</strong> a partir da versão 1.20.0, ao entrar na sua conta o app envia a chave que abre esse backup para o nosso servidor, onde ela fica guardada ligada à sua conta. É isso que faz reinstalar o app, ou trocar de aparelho, deixar de perder o backup. Backups feitos antes dessa versão, os de contas que não entraram de novo desde então e os de contas cujo plano não inclui o backup na nuvem continuam dependendo do código de recuperação. Uma chave que já subiu continua guardada mesmo que o plano mude depois; ela sai junto com a conta, se você excluir a conta.</li>
+      <li><strong>O que isso significa:</strong> no banco de dados a chave não está legível — fica protegida por um segredo que não está dentro do app nem guardado no banco, de modo que uma cópia do banco, sozinha, não abre backup nenhum. Mas, como a chave fica conosco, <strong>temos a capacidade técnica de abrir o conteúdo do seu backup</strong>. Não lemos o conteúdo do seu backup. Até a revisão anterior desta política essa capacidade não existia, porque a chave vivia só no seu aparelho. O texto mudou porque o fato mudou.</li>
+      <li><strong>Código de recuperação:</strong> continua disponível em Configurações &rsaquo; Backup. Ele é a chave dos arquivos de backup que você exporta pelo app e serve como cópia adicional, mas deixou de ser a única forma de restaurar os dados em um novo aparelho.</li>
     </ul>
 
     <h2 id="exclusao">3. Exclusão de Conta e Direitos do Usuário</h2>
